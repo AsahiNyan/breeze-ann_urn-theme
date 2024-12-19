@@ -1,5 +1,5 @@
 # Breeze Ann
-A theme for the Urn speedrun splitter
+A theme for the [Urn](https://github.com/paoloose/urn) speedrun splitter
 
 ## Example images
 ![](assets/urn-ex.png)
