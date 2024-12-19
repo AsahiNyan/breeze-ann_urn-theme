@@ -2,9 +2,7 @@
 A theme for the Urn speedrun splitter
 
 ## Example images
-![](assets/urn3.png)
-![](assets/urn2.png)
-![](assets/urn1.png)
+![](assets/urn-ex.png)
 
 ---
 
