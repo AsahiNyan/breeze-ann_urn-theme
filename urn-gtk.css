@@ -1,0 +1,89 @@
+/**************************
+*"Breeze-Ann" by AsahiNyan*
+**************************/
+
+@define-color default-background #2a2e32;
+@define-color alt-background #393f44;
+@define-color default-text #fcfcfc;
+@define-color attempt-text #878787;
+@define-color time-text #e7e7e7;
+@define-color timer-text rgba(255,255,255,1);
+@define-color timer-ms-text rgba(255,255,255,0.7);
+@define-color behind-bg #da4453;
+@define-color sob-bg #f67400;
+@define-color sob-fg #ffecce;
+@define-color ahead-bg #27ae60;
+@define-color done-bg #3daee9;
+@define-color wr-fg #d4ecff;
+@define-color losing-t #ff2b2b;
+@define-color losing-bg @losing-t;
+
+* { font-weight: 900; }
+
+*:backdrop { color: white; }
+
+scrollbar* { background-color: transparent; border: none; color: transparent; max-width: 0px; max-height: 0px; visibility: none; display: none; }
+
+.window, .header { background-color: @default-background; color: @default-text; }
+
+.title { color: @default-text; font-weight: 900; font-size: 16pt; }
+
+.attempt-count { color: @attempt-text; font-size: 12pt; font-weight: 700; padding-top: 6px; }
+
+.time { color: @time-text; }
+
+.time.behind, .time.best-segment, time.best-split, .time.losing { color: @default-color; }
+
+.timer { font-size: 24pt; font-family: Noto Sans Mono CJK JP; font-weight: 900; color: @timer-text; background-color: @ahead-bg; padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 100px; transition: 0.7s background-color ease; }
+
+.timer-millis { font-size: 17pt; background-color: transparent; padding-bottom: 3px; color: @timer-ms-text; }
+
+.timer.behind, .timer.behind:backdrop { background-color: @behind-bg; color: @timer-text; transition: 0.7s background-color ease; margin-bottom: 10px; }
+
+.timer.losing, .timer.losing:backdrop { background-color: @losing-bg; color: @timer-text; transition: 0.7s background-color ease; margin-bottom: 10px; }
+
+.timer.delay, .timer.delay:backdrop, .timer.done, .timer.done:backdrop { background-color: @done-bg; color: @timer-text; transition: 0.7s background-color ease; margin-bottom: 10px; }
+
+.split { padding: 0px 10px 0px 10px; margin: 2px 0px 2px 0px; border-radius: 50px; min-height: 25px; background-color: transparent; }
+
+.split-title { font-weight: 700; }
+
+.split-icon { margin-top: 4px; margin-bottom: 4px; margin-right: 3px; border-radius: 100%; }
+
+.split-time { color: @time-text; font-weight: 500; }
+
+.split-last { font-weight: 900; background-color: @alt-background; border-radius: 50px; margin-bottom: 2px; margin-top: 0px; }
+
+.current-split { background-color: @done-bg; color: @default-text; font-weight: 700; transition: 0.3s background-color ease; }
+
+.split-delta { color: @ahead-bg; background-color: @alt-background; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.current-split .delta, .current-split .split-delta, .delta { color: @default-text; background-color: @ahead-bg; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.behind, .current-split .delta.behind { color: @default-text; background-color: @behind-bg; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.losing, .current-split .delta.losing { color: @default-text; background-color: @losing-bg; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.best-segment, .current-split .delta.best-segment { color: @default-text; background-color: @sob-bg; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+box.footer { border-radius: 10px; background-color: @alt-background; font-weight: 700; }
+
+box.footer > .prev-segment-label, box.footer > .prev-segment { background-color: @alt-background; padding: 4px 6px 4px 6px; border-radius: 10px 10px 0px 0px; }
+
+box.footer > .sum-of-bests-label, box.footer > .sum-of-bests { background-color: @alt-background; padding: 0px 6px 4px 6px; border-radius: 0px; }
+
+box.footer > .personal-best-label, box.footer > .personal-best { background-color: @alt-background; padding: 0px 6px 4px 6px; border-radius: 0px 0px 10px 10px; }
+
+box.footer > .world-record, box.footer > .world-record-label { border-radius: 20px; background-color: transparent; color: transparent; max-height: 0px; }
+
+.prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.behind { color: @behind-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.losing { color: @losing-t; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.best-segment { color: @sob-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.sum-of-bests { color: @sob-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.personal-best { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
