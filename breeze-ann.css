@@ -1,6 +1,6 @@
-/**************************
-*"Breeze-Ann" by AsahiNyan*
-**************************/
+/****************************
+* "Breeze-Ann" by AsahiNyan *
+****************************/
 
 @define-color default-background #2a2e32;
 @define-color alt-background #393f44;
@@ -12,11 +12,15 @@
 @define-color behind-bg #da4453;
 @define-color sob-bg #f67400;
 @define-color sob-fg #ffecce;
-@define-color ahead-bg #27ae60;
-@define-color done-bg #3daee9;
+@define-color ahead-bg #32bd69;
+@define-color done-bg #3490e7;
 @define-color wr-fg #d4ecff;
 @define-color losing-t #ff2b2b;
 @define-color losing-bg @losing-t;
+@define-color ahead-fg #2ecc70;
+@define-color behind-fg #ff7980;
+@define-color losing-fg #ff4545;
+@define-color sob-fg #ffbe63;
 
 * { font-weight: 900; }
 
@@ -78,12 +82,12 @@ box.footer > .world-record, box.footer > .world-record-label { border-radius: 20
 
 .prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
-.prev-segment.behind { color: @behind-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.behind { color: @behind-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
-.prev-segment.losing { color: @losing-t; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.losing { color: @losing-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
-.prev-segment.best-segment { color: @sob-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.best-segment { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
-.sum-of-bests { color: @sob-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.sum-of-bests { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
-.personal-best { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.personal-best { color: @ahead-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
