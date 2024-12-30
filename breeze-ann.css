@@ -72,13 +72,13 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 box.footer { border-radius: 10px; background-color: @alt-background; font-weight: 700; }
 
+.window box.footer:nth-child(7) { background-color: transparent; }
+
 box.footer > .prev-segment-label, box.footer > .prev-segment { background-color: @alt-background; padding: 4px 6px 4px 6px; border-radius: 10px 10px 0px 0px; }
 
 box.footer > .sum-of-bests-label, box.footer > .sum-of-bests { background-color: @alt-background; padding: 0px 6px 4px 6px; border-radius: 0px; }
 
 box.footer > .personal-best-label, box.footer > .personal-best { background-color: @alt-background; padding: 0px 6px 4px 6px; border-radius: 0px 0px 10px 10px; }
-
-box.footer > .world-record, box.footer > .world-record-label { border-radius: 20px; background-color: transparent; color: transparent; max-height: 0px; }
 
 .prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
 
